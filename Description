@@ -1,0 +1,1 @@
+Using this Winery Node type we can install MQTT broker with customized listening port and Anonymous user filteration using password authentication.

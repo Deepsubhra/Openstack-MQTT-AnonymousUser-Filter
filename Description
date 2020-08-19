@@ -1,1 +1,12 @@
 Using this Winery Node type we can install MQTT broker with customized listening port and Anonymous user filteration using password authentication.
+
+After deployment login to the instance and check the service is running or not using this command :         ps aux | grep mos
+
+After that set your password as per your choice with this command : sudo mosquitto_passwd -c /etc/mosquitto/passwd deep             
+Here deep is the user name for publishing a message.
+
+Then restart the service with this command :   sudo systemctl restart mosquitto
+
+Then check the anonymous user filtering with this command : mosquitto_pub -h localhost -t "test" -m "hello world"
+
+
